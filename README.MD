@@ -26,4 +26,4 @@
 * 若domain中未指定cache true,查询的时候可以启用缓存Persion.findAll([cache:true])
 
 
-参考：(原文)[https://github.com/ceva24/hibernate-cache-example]
+参考：[原文](https://github.com/ceva24/hibernate-cache-example)
