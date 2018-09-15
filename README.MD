@@ -24,3 +24,6 @@
 * 配置文件同时启用查询缓存和二级缓存
 * 若domain中添加了cache true,查询的时候可以不加
 * 若domain中未指定cache true,查询的时候可以启用缓存Persion.findAll([cache:true])
+
+
+参考：(原文)[https://github.com/ceva24/hibernate-cache-example]
