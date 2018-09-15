@@ -1,0 +1,18 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ehcache.xsd">
+
+    <!--<diskStore path="java.io.tmpdir"/>-->
+
+    <cache name="org.hibernate.cache.spi.UpdateTimestampsCache" maxElementsInMemory="200000" eternal="true" overflowToDisk="false"
+           diskPersistent="false" />
+
+    <cache name="org.hibernate.cache.internal.StandardQueryCache" maxElementsInMemory="200000" eternal="false" timeToIdleSeconds="120"
+           timeToLiveSeconds="180" overflowToDisk="false" diskPersistent="false" memoryStoreEvictionPolicy="LRU" />
+
+    <!--<cache name="com.test.Person" maxElementsInMemory="1000" eternal="false" timeToIdleSeconds="10" timeToLiveSeconds="10"-->
+           <!--overflowToDisk="false" diskPersistent="false" memoryStoreEvictionPolicy="LRU" />-->
+
+    <!--maxElementsInMemory值应该根据具体情况配置，timeToIdleSeconds：超过2分钟未访问则失效，timeToLiveSeconds：存活3分钟-->
+    <defaultCache maxElementsInMemory="200000" eternal="false" timeToIdleSeconds="120" timeToLiveSeconds="180" overflowToDisk="false"
+                  diskPersistent="false" memoryStoreEvictionPolicy="LRU" />
+
+</ehcache>
